@@ -21,19 +21,26 @@ $padding: 100px 0;
     align-items: $align;
     flex-direction: $direction;
 }
+@mixin bgImg($height) {
+    height: $height;
+    background-position: center;
+    background-size: cover;
+}
 @mixin btn {
-    border: none;
-    background: rgba($orange, 0.9);
-    color: $white;
+    padding: 10px 40px;
+    background: transparent;
+    border: 2px solid $white;
     text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 15px 60px;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin-top: 30px;
+    color: $white;
     font-family: $fontFamily;
     cursor: pointer;
     transition: $transition;
     &:hover {
-        background: $gray;
+        background: $white;
+        color: $primary;
     }
 }
 // extend
@@ -47,6 +54,7 @@ $padding: 100px 0;
 body {
     font-family: $fontFamily;
     font-size: $fontSize;
+    line-height: 1.5;
 }
 
 a {
@@ -72,6 +80,12 @@ h4,
 h5,
 h6 {
     font-family: $fontFamily;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 400;
+    text-shadow: 0 0 2px $tertiary;
 }
 
 .topBar {
@@ -106,6 +120,36 @@ h6 {
                 background-color: $secondary;
                 box-shadow: 0 0 10px $lightGray;
             }
+        }
+    }
+}
+// mainHeader
+.mainHeader {
+    background: linear-gradient(rgba($primary, 0.7), rgba($primary, 0.7)), url(../img/header.jpg);
+    @include bgImg(90vh);
+    nav {
+        padding: 20px 0 0 0;
+        ul {
+            @include flex(flex-end, center);
+            a {
+                color: $white;
+                font-size: 1.3rem;
+                margin-left: 40px;
+            }
+        }
+    }
+    hgroup {
+        @include flex(center, center, column);
+        height: 90vh;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        color: $white;
+        p {
+            font-size: 1.3rem;
+        }
+        button {
+            @include btn;
         }
     }
 }
