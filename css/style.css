@@ -247,4 +247,15 @@ h1 {
 .contact article p {
   color: #33a5d7;
 }
+
+.map iframe {
+  display: block;
+}
+
+footer {
+  background-color: #3177b5;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
 /*# sourceMappingURL=style.css.map */

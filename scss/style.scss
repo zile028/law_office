@@ -179,3 +179,16 @@ h1 {
         }
     }
 }
+// map
+.map {
+    iframe {
+        display: block;
+    }
+}
+// footer
+footer {
+    background-color: $primary;
+    text-align: center;
+    color: $white;
+    padding: 20px;
+}
