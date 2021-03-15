@@ -194,7 +194,7 @@ footer {
 }
 // servicies
 .servicies {
-    @include flex(center, flex-start);
+    @include flex(center, stretch);
     margin-top: -100px;
     article {
         flex: 0 0 25%;
