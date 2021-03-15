@@ -32,15 +32,25 @@ $padding: 100px 0;
     border: 2px solid $white;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 2rem;
+    font-size: 1rem;
     margin-top: 30px;
-    color: $white;
-    font-family: $fontFamily;
     cursor: pointer;
+    font-family: $fontFamily;
     transition: $transition;
+    color: $white;
     &:hover {
         background: $white;
         color: $primary;
+    }
+}
+@mixin underline($color, $width, $marTop) {
+    &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        margin: 0 0 $marTop 0;
+        width: $width;
+        background-color: $color;
     }
 }
 // extend
@@ -140,7 +150,7 @@ h1 {
     }
     hgroup {
         @include flex(center, center, column);
-        height: 75vh;
+        height: 70vh;
         width: 50%;
         margin: auto;
         text-align: center;
@@ -151,16 +161,6 @@ h1 {
         button {
             @include btn;
         }
-    }
-}
-@mixin underline($color, $width, $marTop) {
-    &::after {
-        content: "";
-        display: block;
-        height: 2px;
-        margin: 0 0 $marTop 0;
-        width: $width;
-        background-color: $color;
     }
 }
 // contact
@@ -191,4 +191,29 @@ footer {
     text-align: center;
     color: $white;
     padding: 20px;
+}
+// servicies
+.servicies {
+    @include flex(center, flex-start);
+    margin-top: -100px;
+    article {
+        flex: 0 0 25%;
+        color: $white;
+        padding: 50px;
+        background-color: $primary;
+        text-align: center;
+        &:nth-child(even) {
+            background-color: $secondary;
+        }
+        i {
+            font-size: 4rem;
+        }
+        h3 {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+        button {
+            @include btn();
+        }
+    }
 }

@@ -174,7 +174,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 75vh;
+  height: 70vh;
   width: 50%;
   margin: auto;
   text-align: center;
@@ -191,13 +191,13 @@ h1 {
   border: 2px solid #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-top: 30px;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
   cursor: pointer;
+  font-family: "Open Sans", sans-serif;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+  color: #fff;
 }
 
 .mainHeader hgroup button:hover {
@@ -257,5 +257,67 @@ footer {
   text-align: center;
   color: #fff;
   padding: 20px;
+}
+
+.servicies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: -100px;
+}
+
+.servicies article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  color: #fff;
+  padding: 50px;
+  background-color: #3177b5;
+  text-align: center;
+}
+
+.servicies article:nth-child(even) {
+  background-color: #33a5d7;
+}
+
+.servicies article i {
+  font-size: 4rem;
+}
+
+.servicies article h3 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.servicies article button {
+  padding: 10px 40px;
+  background: transparent;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin-top: 30px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  color: #fff;
+}
+
+.servicies article button:hover {
+  background: #fff;
+  color: #3177b5;
 }
 /*# sourceMappingURL=style.css.map */
