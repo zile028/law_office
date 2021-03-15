@@ -44,6 +44,26 @@
     </header>
 
 
+    <!-- contact -->
+    <section class="contact container">
+        <article>
+            <h3>Address</h3>
+            <p>Calgary, Alberta</p>
+            <p>CANADA</p>
+        </article>
+
+        <article>
+            <h3>Contact</h3>
+            <p>Phone: 0234 567</p>
+            <p>Email: email@lawoffice.com</p>
+        </article>
+
+        <article>
+            <h3>Business Hours</h3>
+            <p>MON / FRI - 10:00/18:00</p>
+            <p>SAT - 11:00/15:00</p>
+        </article>
+    </section>
 
 </body>
 

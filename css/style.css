@@ -174,7 +174,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 90vh;
+  height: 75vh;
   width: 50%;
   margin: auto;
   text-align: center;
@@ -203,5 +203,48 @@ h1 {
 .mainHeader hgroup button:hover {
   background: #fff;
   color: #3177b5;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 100px 0;
+}
+
+.contact article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.contact article h3 {
+  color: #3177b5;
+  font-size: 2rem;
+}
+
+.contact article h3::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 0 0 20px 0;
+  width: 50px;
+  background-color: #3177b5;
+}
+
+.contact article p {
+  color: #33a5d7;
 }
 /*# sourceMappingURL=style.css.map */

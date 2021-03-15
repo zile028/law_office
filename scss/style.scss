@@ -140,7 +140,7 @@ h1 {
     }
     hgroup {
         @include flex(center, center, column);
-        height: 90vh;
+        height: 75vh;
         width: 50%;
         margin: auto;
         text-align: center;
@@ -150,6 +150,32 @@ h1 {
         }
         button {
             @include btn;
+        }
+    }
+}
+@mixin underline($color, $width, $marTop) {
+    &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        margin: 0 0 $marTop 0;
+        width: $width;
+        background-color: $color;
+    }
+}
+// contact
+.contact {
+    @include flex(space-between, flex-start);
+    padding: $padding;
+    article {
+        flex: 0 0 30%;
+        h3 {
+            color: $primary;
+            font-size: 2rem;
+            @include underline($primary, 50px, 20px);
+        }
+        p {
+            color: $secondary;
         }
     }
 }
