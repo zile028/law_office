@@ -1,11 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
 // variables
-$fontFamily: "Quicksand", sans-serif;
+$fontFamily: "Open Sans", sans-serif;
 $fontSize: 16px;
-
 $transition: 0.4s ease;
-$py: 90px 0 80px;
+$primary: #3177b5;
+$secondary: #33a5d7;
+$tertiary: #080033;
+$black: #000;
+$white: #fff;
+$lightGray: #a0a0a0;
+$gray: #eaeaea;
+$padding: 100px 0;
 
 // mixins
 @mixin flex($justify, $align, $direction: row) {
@@ -47,6 +53,7 @@ a {
     text-decoration: none;
     color: inherit;
     font-size: inherit;
+    transition: $transition;
 }
 ul {
     list-style: none;
