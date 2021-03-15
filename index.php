@@ -15,7 +15,7 @@
 
 <body>
     <!-- top bar -->
-    <section class="topBar">
+    <section class="topBar container">
         <a href="index.php" class="logo">Law <span>office</span></a>
         <ul>
             <li><a href=""><i class="fab fa-facebook-f"></i></a></li>

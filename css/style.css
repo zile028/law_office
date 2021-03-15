@@ -42,4 +42,75 @@ h5,
 h6 {
   font-family: "Open Sans", sans-serif;
 }
+
+.topBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px 0;
+  font-size: 1.7rem;
+}
+
+.topBar .logo {
+  color: #3177b5;
+}
+
+.topBar .logo span {
+  color: #33a5d7;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.topBar .logo:hover {
+  opacity: 0.8;
+}
+
+.topBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.topBar ul a {
+  background-color: #3177b5;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 40px;
+  color: #fff;
+}
+
+.topBar ul a:hover {
+  background-color: #33a5d7;
+  -webkit-box-shadow: 0 0 10px #a0a0a0;
+          box-shadow: 0 0 10px #a0a0a0;
+}
 /*# sourceMappingURL=style.css.map */

@@ -73,3 +73,39 @@ h5,
 h6 {
     font-family: $fontFamily;
 }
+
+.topBar {
+    @include flex(space-between, center);
+    padding: 10px 0;
+    font-size: 1.7rem;
+    .logo {
+        color: $primary;
+        span {
+            color: $secondary;
+            font-weight: 800;
+            font-style: italic;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    ul {
+        @include flex(space-between, center);
+        a {
+            background-color: $primary;
+            border-radius: 50%;
+            font-size: 1.3rem;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            text-align: center;
+            margin-left: 40px;
+            color: $white;
+            &:hover {
+                background-color: $secondary;
+                box-shadow: 0 0 10px $lightGray;
+            }
+        }
+    }
+}
