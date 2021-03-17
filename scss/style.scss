@@ -217,6 +217,18 @@ footer {
         }
     }
 }
+
+.borderHeadings {
+    border: 2px solid $white;
+    padding: 70px;
+    text-align: center;
+    font-size: 3rem;
+    color: $white;
+    span {
+        font-weight: 700;
+    }
+}
+
 .about {
     @include flex(space-between, stretch);
     height: 50vh;
@@ -244,14 +256,7 @@ footer {
             @include bgImg(50vh);
             @include flex(flex-end, center);
             h2 {
-                border: 2px solid $white;
-                padding: 70px;
-                text-align: center;
-                font-size: 3rem;
-                color: $white;
-                span {
-                    font-weight: 700;
-                }
+                @extend .borderHeadings;
             }
         }
     }
@@ -311,6 +316,56 @@ footer {
 }
 // consultation
 .consultation {
+    @include flex(space-between, stretch);
+    height: 50vh;
+    //background-color: $gray;
+    article {
+        flex: 0 0 50%;
+        &:first-child {
+            background-image: linear-gradient(rgba($tertiary, 0.7), rgba($tertiary, 0.7)), url(../img/about2.jpg);
+            padding-left: 10%;
+            @include bgImg(auto);
+            @include flex(flex-start, center);
+            h2 {
+                @extend .borderHeadings;
+                text-align: left;
+            }
+        }
+
+        &:last-child {
+            @include flex(flex-end, center);
+            padding-right: 10%;
+            form {
+                width: 70%;
+                @include flex(space-between, center);
+                input {
+                    border: 2px solid $primary;
+                    padding: 10px;
+                    font-size: 1rem;
+                    margin-bottom: 20px;
+                    &[type="text"] {
+                        flex: 0 0 48%;
+                    }
+                    &[type="email"] {
+                        flex: 1 0 100%;
+                    }
+                }
+                textarea {
+                    flex: 0 0 100%;
+                    border: 2px solid $primary;
+                    padding: 10px;
+                    font-size: 1rem;
+                    margin-bottom: 20px;
+                }
+                button {
+                    @include btn();
+                    background-color: $primary;
+                    flex: 0 0 100%;
+                    border: 2px solid $primary;
+                }
+            }
+        }
+    }
 }
 // testimonials
 .testimonials {

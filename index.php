@@ -110,7 +110,7 @@
 <!-- consultation -->
 <section class="consultation">
     <article>
-        <h2>Get a free no obligation conslutation</h2>
+        <h2>Get a free <br> no obligation <br> conslutation</h2>
     </article>
     <article>
         <form>
