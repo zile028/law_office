@@ -107,42 +107,32 @@
         </article>
     </article>
 </section>
-<div class="owl-carousel owl-theme">
-    <div class="item">
-        <h4>1</h4>
-    </div>
-    <div class="item">
-        <h4>2</h4>
-    </div>
-    <div class="item">
-        <h4>3</h4>
-    </div>
-    <div class="item">
-        <h4>4</h4>
-    </div>
-    <div class="item">
-        <h4>5</h4>
-    </div>
-    <div class="item">
-        <h4>6</h4>
-    </div>
-    <div class="item">
-        <h4>7</h4>
-    </div>
-    <div class="item">
-        <h4>8</h4>
-    </div>
-    <div class="item">
-        <h4>9</h4>
-    </div>
-    <div class="item">
-        <h4>10</h4>
-    </div>
-    <div class="item">
-        <h4>11</h4>
-    </div>
-    <div class="item">
-        <h4>12</h4>
-    </div>
+<!-- testimonials -->
+<section class="testimonials">
+    <h2>Tstimonials</h2>
+    <article class="owl-carousel owl-theme">
+        <div class="item">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos neque fugit animi illum voluptate! Officia
+                fugit deserunt et officiis eos eaque labore reprehenderit dolores delectus, aperiam hic consequuntur
+                similique earum!</p>
+            <h3>Client Name 1</h3>
+        </div>
+
+        <div class="item">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos neque fugit animi illum voluptate! Officia
+                fugit deserunt et officiis eos eaque labore reprehenderit dolores delectus, aperiam hic consequuntur
+                similique earum!</p>
+            <h3>Client Name 2</h3>
+        </div>
+
+        <div class="item">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos neque fugit animi illum voluptate! Officia
+                fugit deserunt et officiis eos eaque labore reprehenderit dolores delectus, aperiam hic consequuntur
+                similique earum!</p>
+            <h3>Client Name 3</h3>
+        </div>
+
+    </article>
+</section>
 </div>
 <?php include "partials/footer.php"?>
