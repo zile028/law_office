@@ -388,3 +388,44 @@ footer {
         }
     }
 }
+
+// personals
+.personals {
+    background-color: $primary;
+    padding: 50px 0;
+    article {
+        text-align: center;
+        &:first-child {
+            h2 {
+                color: $white;
+                font-size: 2rem;
+            }
+            p {
+                width: 50%;
+                margin: 30px auto;
+            }
+        }
+        &:last-child {
+            @include flex(space-between, center);
+            h4 {
+                @include underline($primary, 50px, 10px auto);
+                font-size: 1.7rem;
+                color: $primary;
+            }
+            div {
+                flex: 0 0 24%;
+                margin-bottom: 20px;
+                padding: 20px 20px 40px;
+                background-color: $white;
+                cursor: pointer;
+                transition: $transition;
+                &:hover {
+                    background-color: $tertiary;
+                    p {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
