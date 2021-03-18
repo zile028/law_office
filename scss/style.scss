@@ -150,7 +150,7 @@ h1 {
     }
     hgroup {
         @include flex(center, center, column);
-        height: 70vh;
+        height: 50vh;
         width: 50%;
         margin: auto;
         text-align: center;
@@ -161,6 +161,14 @@ h1 {
         button {
             @include btn;
         }
+    }
+}
+.blogHeader {
+    @extend .mainHeader;
+    background: linear-gradient(rgba($primary, 0.7), rgba($primary, 0.7)), url(../img/about.jpg);
+    @include bgImg(50vh);
+    hgroup {
+        height: 40vh;
     }
 }
 // contact
@@ -423,6 +431,104 @@ footer {
                     background-color: $tertiary;
                     p {
                         color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+// blog
+.blog {
+    background-color: $gray;
+    section {
+        @include flex(space-between, flex-start);
+        padding: $padding;
+        position: relative;
+        article {
+            flex: 0 0 73%;
+            .posts {
+                @include flex(space-between, stretch);
+                box-shadow: 0 0 10px 5px $lightGray;
+                background-color: $white;
+                padding: 10px;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                figure {
+                    flex: 0 0 38%;
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                div {
+                    flex: 0 0 60%;
+                    padding: 10px 0;
+                    position: relative;
+                    hgroup {
+                        @include flex(space-between, center);
+                        background: rgba($primary, 0.8);
+                        margin-left: -30%;
+                        padding: 5px;
+                        color: $white;
+                        text-shadow: 0 0 2px $black;
+                        margin-bottom: 10px;
+                        p {
+                            span {
+                                border-left: 1px solid $white;
+                                margin-left: 10px;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                    a {
+                        padding: 10px 15px;
+                        background: rgba($primary, 0.8);
+                        color: $white;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        &:hover {
+                            background: rgba($primary, 0.5);
+                            color: $tertiary;
+                        }
+                    }
+                }
+            }
+        }
+        aside {
+            position: sticky;
+            top: 0;
+            flex: 0 0 25%;
+            background: rgba($primary, 0.8);
+            padding: 10px;
+            color: white;
+            text-shadow: 0 0 2px $black;
+            h2 {
+                margin-bottom: 10px;
+                font-size: 1.7rem;
+            }
+            ul {
+                padding-left: 10px;
+                li {
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                    a {
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        transition: color $transition;
+                        transition: text-shadow $transition;
+                        &::before {
+                            content: "\00bb";
+                            margin-right: 5px;
+                        }
+                        &:hover {
+                            color: $tertiary;
+                            text-shadow: 0 0 2px $lightGray;
+                        }
                     }
                 }
             }
